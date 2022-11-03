@@ -13,7 +13,7 @@ function incrementCount(){
     if(counter.innerHTML>0){
         counter.style.color='green';
     }
-   
+   counter.animate([{opacity:'0.2'},{opacity:'1.0'}],{duration:500, fill:"forwards"});
 }
 
 function decrementCount(){
@@ -22,6 +22,7 @@ function decrementCount(){
     if(counter.innerHTML<0){
         counter.style.color='Red';
     }
+    counter.animate([{opacity:'0.2'},{opacity:'1.0'}],{duration:500, fill:"forwards"});
 }
 
 
